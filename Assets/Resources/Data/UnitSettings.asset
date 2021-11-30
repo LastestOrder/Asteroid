@@ -15,7 +15,8 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: eb974834770f216478901da349701c9a, type: 3}
   _name: White
   _speed: 3
-  _rotationSpeed: 3
+  _rotationSpeed: 100
+  _gravity: 0
   _damage: 3
   _attackSpeed: 1
   _position: {x: 0, y: 0}
