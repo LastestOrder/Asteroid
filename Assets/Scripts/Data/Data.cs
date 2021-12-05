@@ -8,9 +8,11 @@ namespace Asteroid
     {
         [SerializeField] private string _playerDataPath;
         [SerializeField] private string _enemyDataPath;
+        [SerializeField] private string _bulletDataPath;
 
         private PlayerData _player;
         private EnemyData _enemy;
+        private BulletData _bullet;
 
         public PlayerData Player
         {
@@ -24,7 +26,18 @@ namespace Asteroid
                 return _player;
             }
         }
+        public BulletData Bullet
+        {
+            get
+            {
+                if ((_bullet) == null)
+                {
+                    _bullet = Load<BulletData>("Data/" + _bulletDataPath);
+                }
 
+                return _bullet;
+            }
+        }
         public EnemyData Enemy
         {
             get
